@@ -1,0 +1,173 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "testing login page with valide credential",
+        "description": "",
+        "id": "testing-adactin-hotal-details-page;testing-login-page-with-valide-credential;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9332910200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "we are on the Adactin Login page",
+            "match": {
+              "location": "StepDefinition.we_are_on_the_Adactin_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1435922900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "we should enter the \"prabhuthavasumani\"and \"887083\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"prabhuthavasumani\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"887083\"",
+                  "offset": 43
+                }
+              ],
+              "location": "StepDefinition.we_should_enter_the_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3155451200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should search hotal \"Sydney\",\"Hotel Creek\",\"Deluxe\",\"2 - Two\",\"12/01/2021\",\"17/01/2021\",\"3 - Three\",\"1 - One\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"Deluxe\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"12/01/2021\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"17/01/2021\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"3 - Three\"",
+                  "offset": 93
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 105
+                }
+              ],
+              "location": "StepDefinition.user_should_search_hotal(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1545390300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should book the hotal \"prabhu\",\"raj\",\"w street\",\"0987654345678909\",\"VISA\",\"February\",\"2013\",\"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"prabhu\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"raj\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"w street\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"0987654345678909\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"VISA\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"February\"",
+                  "offset": 79
+                },
+                {
+                  "val": "\"2013\"",
+                  "offset": 90
+                },
+                {
+                  "val": "\"123\"",
+                  "offset": 97
+                }
+              ],
+              "location": "StepDefinition.user_should_book_the_hotal(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150384300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "we should click the login button",
+            "match": {
+              "location": "StepDefinition.we_should_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6978615400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "we should verify Title have Search Hotel or not",
+            "match": {
+              "location": "StepDefinition.we_should_verify_Title_have_Search_Hotel_or_not()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "testing adactin hotal details page",
+    "description": "",
+    "id": "testing-adactin-hotal-details-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]
