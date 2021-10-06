@@ -1,5 +1,6 @@
 package com.runner;
 
+
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
@@ -7,14 +8,20 @@ import com.reporting.Reporting;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/features/adactinfields2.feature",glue={"com.adactinfields2.feature"}, monochrome=true, plugin = {"pretty","json:src/test/resources/report/result.json"})
-public class TestRunner {
+@CucumberOptions(features="C:\\Users\\prabhu\\eclipse-workspace\\MAVEN\\src\\test\\resources\\features\\CancelBooking.feature",glue= {"com.stepdefinition"},monochrome=true,plugin= {"pretty",
+		"json:C:\\Users\\prabhu\\eclipse-workspace\\MAVEN\\src\\test\\resources\\report\\output.json"},dryRun=false)
 	
-	//@AfterClass
-	//public static void afterClass() {
-		//Reporting.jvmReports("C:\\Users\\prabhu\\eclipse-workspace\\MAVEN\\src\\test\\resources\\report\\result.json");
+	
+	public class TestRunner{
+
+	@AfterClass
+	public static void afterClass() {
+		String path = System.getProperty("user.dir");
+		Reporting.jvmReports(path+"\\src\\test\\resources\\report\\cancel.json");
+
+	}
+		
 
 	}
 

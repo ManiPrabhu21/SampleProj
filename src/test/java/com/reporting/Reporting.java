@@ -13,7 +13,7 @@ public class Reporting {
 
 	public static void jvmReports(String json) {
 
-		File file = new File("C:\\Users\\prabhu\\eclipse-workspace\\MAVEN\\src\\test\\resources\\report");
+		File file = new File(System.getProperty("user.dir")+"C:\\Users\\prabhu\\eclipse-workspace\\MAVEN\\src\\test\\resources\\report");
 		
 		Configuration configuration = new Configuration(file, "Adactin Hotel Page");
 		configuration.addClassifications("browser", "chrome");

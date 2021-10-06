@@ -3,54 +3,54 @@
     "line": 1,
     "elements": [
       {
-        "line": 13,
-        "name": "testing login page with valide credential",
+        "line": 18,
+        "name": "User should cancel the booking order",
         "description": "",
-        "id": "testing-adactin-hotal-details-page;testing-login-page-with-valide-credential;;2",
+        "id": "verifying-adactin-hotel-page;user-should-cancel-the-booking-order;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 9332910200,
+              "duration": 4812177100,
               "status": "passed"
             },
             "line": 4,
-            "name": "we are on the Adactin Login page",
+            "name": "User are on the Adactin Login page",
             "match": {
-              "location": "StepDefinition.we_are_on_the_Adactin_Login_page()"
+              "location": "StepDefinition.user_are_on_the_Adactin_Login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1435922900,
+              "duration": 1306213800,
               "status": "passed"
             },
             "line": 5,
-            "name": "we should enter the \"prabhuthavasumani\"and \"887083\"",
+            "name": "User should enter \"Prabhuthavasumani\",\"887083\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"prabhuthavasumani\"",
-                  "offset": 20
+                  "val": "\"Prabhuthavasumani\"",
+                  "offset": 18
                 },
                 {
                   "val": "\"887083\"",
-                  "offset": 43
+                  "offset": 38
                 }
               ],
-              "location": "StepDefinition.we_should_enter_the_and(String,String)"
+              "location": "StepDefinition.user_should_enter(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3155451200,
+              "duration": 2463454100,
               "status": "passed"
             },
             "line": 6,
-            "name": "user should search hotal \"Sydney\",\"Hotel Creek\",\"Deluxe\",\"2 - Two\",\"12/01/2021\",\"17/01/2021\",\"3 - Three\",\"1 - One\"",
+            "name": "User should search hotel \"Sydney\",\"Hotel Creek\",\"Deluxe\",\"2 - Two\",\"12/01/2021\",\"17/01/2021\",\"3 - Three\",\"1 - One\"",
             "match": {
               "arguments": [
                 {
@@ -86,17 +86,29 @@
                   "offset": 105
                 }
               ],
-              "location": "StepDefinition.user_should_search_hotal(String,String,String,String,String,String,String,String)"
+              "location": "StepDefinition.user_should_search_hotel(String,String,String,String,String,String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1545390300,
+              "duration": 843087800,
               "status": "passed"
             },
             "line": 7,
-            "name": "user should book the hotal \"prabhu\",\"raj\",\"w street\",\"0987654345678909\",\"VISA\",\"February\",\"2013\",\"123\"",
+            "name": "User should select the hotel",
+            "match": {
+              "location": "StepDefinition.user_should_select_the_hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1399488400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should book the hotel \"prabhu\",\"raj\",\"w street\"",
             "match": {
               "arguments": [
                 {
@@ -110,64 +122,85 @@
                 {
                   "val": "\"w street\"",
                   "offset": 42
-                },
-                {
-                  "val": "\"0987654345678909\"",
-                  "offset": 53
-                },
-                {
-                  "val": "\"VISA\"",
-                  "offset": 72
-                },
-                {
-                  "val": "\"February\"",
-                  "offset": 79
-                },
-                {
-                  "val": "\"2013\"",
-                  "offset": 90
-                },
-                {
-                  "val": "\"123\"",
-                  "offset": 97
                 }
               ],
-              "location": "StepDefinition.user_should_book_the_hotal(String,String,String,String,String,String,String,String)"
+              "location": "StepDefinition.user_should_book_the_hotel(String,String,String,DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "CreditCardNo",
+                  "CreditCardType",
+                  "ExpiryMonth",
+                  "ExpiryYear",
+                  "CVVNumber"
+                ]
+              },
+              {
+                "cells": [
+                  "9876765456876545",
+                  "American express",
+                  "January",
+                  "2022",
+                  "987"
+                ]
+              },
+              {
+                "cells": [
+                  "7865765456768765",
+                  "VISA",
+                  "April",
+                  "2022",
+                  "960"
+                ]
+              },
+              {
+                "cells": [
+                  "9876543423456765",
+                  "Master card",
+                  "March",
+                  "2022",
+                  "878"
+                ]
+              },
+              {
+                "cells": [
+                  "8098765465434567",
+                  "Other",
+                  "April",
+                  "2022",
+                  "457"
+                ]
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 150384300,
+              "duration": 10142089900,
               "status": "passed"
             },
-            "line": 8,
-            "name": "we should click the login button",
+            "line": 14,
+            "name": "User should verify \"The booking has been cancelled.\" message",
             "match": {
-              "location": "StepDefinition.we_should_click_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6978615400,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "we should verify Title have Search Hotel or not",
-            "match": {
-              "location": "StepDefinition.we_should_verify_Title_have_Search_Hotel_or_not()"
+              "arguments": [
+                {
+                  "val": "\"The booking has been cancelled.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinition.user_should_verify_message(String)"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "testing adactin hotal details page",
+    "name": "Verifying Adactin Hotel page",
     "description": "",
-    "id": "testing-adactin-hotal-details-page",
+    "id": "verifying-adactin-hotel-page",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/Login.feature",
+    "uri": "C:/Users/prabhu/eclipse-workspace/MAVEN/src/test/resources/features/CancelBooking.feature",
     "tags": []
   }
 ]
