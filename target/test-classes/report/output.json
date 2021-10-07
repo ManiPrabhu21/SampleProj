@@ -1,0 +1,206 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 18,
+        "name": "User should cancel the booking order",
+        "description": "",
+        "id": "verifying-adactin-hotel-page;user-should-cancel-the-booking-order;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4812177100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User are on the Adactin Login page",
+            "match": {
+              "location": "StepDefinition.user_are_on_the_Adactin_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1306213800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should enter \"Prabhuthavasumani\",\"887083\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Prabhuthavasumani\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"887083\"",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinition.user_should_enter(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2463454100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should search hotel \"Sydney\",\"Hotel Creek\",\"Deluxe\",\"2 - Two\",\"12/01/2021\",\"17/01/2021\",\"3 - Three\",\"1 - One\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"Deluxe\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"12/01/2021\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"17/01/2021\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"3 - Three\"",
+                  "offset": 93
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 105
+                }
+              ],
+              "location": "StepDefinition.user_should_search_hotel(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 843087800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should select the hotel",
+            "match": {
+              "location": "StepDefinition.user_should_select_the_hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1399488400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should book the hotel \"prabhu\",\"raj\",\"w street\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"prabhu\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"raj\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"w street\"",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefinition.user_should_book_the_hotel(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "CreditCardNo",
+                  "CreditCardType",
+                  "ExpiryMonth",
+                  "ExpiryYear",
+                  "CVVNumber"
+                ]
+              },
+              {
+                "cells": [
+                  "9876765456876545",
+                  "American express",
+                  "January",
+                  "2022",
+                  "987"
+                ]
+              },
+              {
+                "cells": [
+                  "7865765456768765",
+                  "VISA",
+                  "April",
+                  "2022",
+                  "960"
+                ]
+              },
+              {
+                "cells": [
+                  "9876543423456765",
+                  "Master card",
+                  "March",
+                  "2022",
+                  "878"
+                ]
+              },
+              {
+                "cells": [
+                  "8098765465434567",
+                  "Other",
+                  "April",
+                  "2022",
+                  "457"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10142089900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should verify \"The booking has been cancelled.\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The booking has been cancelled.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinition.user_should_verify_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Adactin Hotel page",
+    "description": "",
+    "id": "verifying-adactin-hotel-page",
+    "keyword": "Feature",
+    "uri": "C:/Users/prabhu/eclipse-workspace/MAVEN/src/test/resources/features/CancelBooking.feature",
+    "tags": []
+  }
+]

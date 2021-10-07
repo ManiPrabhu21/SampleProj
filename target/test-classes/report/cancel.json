@@ -1,0 +1,187 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 18,
+        "name": "User should cancel the booking order",
+        "description": "",
+        "id": "verifying-adactin-hotel-page;user-should-cancel-the-booking-order;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1132)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:925)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1148)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1129)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:925)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1122)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:925)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:339)\r\n\tat org.base.BaseClas.browserConfiguration(BaseClas.java:44)\r\n\tat com.stepdefinition.StepDefinition.user_are_on_the_Adactin_Login_page(StepDefinition.java:30)\r\n\tat ✽.User are on the Adactin Login page(src/test/resources/features/CancelBooking.feature:4)\r\nCaused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1278)\r\n\tat io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:105)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1153)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1001)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:919)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1148)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1129)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:925)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1122)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:925)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:339)\r\n\tat org.base.BaseClas.browserConfiguration(BaseClas.java:44)\r\n\tat com.stepdefinition.StepDefinition.user_are_on_the_Adactin_Login_page(StepDefinition.java:30)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:49)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:124)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:133)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\nCaused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com\r\n\tat java.net.InetAddress.getAllByName0(Unknown Source)\r\n\tat java.net.InetAddress.getAllByName(Unknown Source)\r\n\tat java.net.InetAddress.getAllByName(Unknown Source)\r\n\tat org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)\r\n\tat org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)\r\n\tat org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:409)\r\n\tat org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)\r\n\tat org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)\r\n\tat org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)\r\n\tat org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)\r\n\tat org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)\r\n\tat org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:172)\r\n\tat org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)\r\n\tat org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)\r\n\tat org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)\r\n\tat org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)\r\n\tat org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)\r\n\tat org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)\r\n\tat org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)\r\n\tat org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)\r\n\tat org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)\r\n\tat org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)\r\n\tat org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)\r\n\tat org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)\r\n\tat org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)\r\n\tat io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:158)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1263)\r\n\t... 52 more\r\n",
+              "duration": 2360889500,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "User are on the Adactin Login page",
+            "match": {
+              "location": "StepDefinition.user_are_on_the_Adactin_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23700,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "User should enter \"Prabhuthavasumani\",\"887083\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Prabhuthavasumani\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"887083\"",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinition.user_should_enter(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User should search hotel \"Sydney\",\"Hotel Creek\",\"Deluxe\",\"2 - Two\",\"12/01/2021\",\"17/01/2021\",\"3 - Three\",\"1 - One\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"Deluxe\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"12/01/2021\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"17/01/2021\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"3 - Three\"",
+                  "offset": 93
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 105
+                }
+              ],
+              "location": "StepDefinition.user_should_search_hotel(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User should select the hotel",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User should book the hotel \"prabhu\",\"raj\",\"w street\"",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "CreditCardNo",
+                  "CreditCardType",
+                  "ExpiryMonth",
+                  "ExpiryYear",
+                  "CVVNumber"
+                ]
+              },
+              {
+                "cells": [
+                  "9876765456876545",
+                  "American express",
+                  "January",
+                  "2022",
+                  "987"
+                ]
+              },
+              {
+                "cells": [
+                  "7865765456768765",
+                  "VISA",
+                  "Febraury",
+                  "2022",
+                  "960"
+                ]
+              },
+              {
+                "cells": [
+                  "9876543423456765",
+                  "Master card",
+                  "March",
+                  "2022",
+                  "878"
+                ]
+              },
+              {
+                "cells": [
+                  "8098765465434567",
+                  "Other",
+                  "April",
+                  "2022",
+                  "457"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10800,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User should verify \"booking has been cancelled.\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"booking has been cancelled.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinition.user_should_verify_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Adactin Hotel page",
+    "description": "",
+    "id": "verifying-adactin-hotel-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/CancelBooking.feature",
+    "tags": []
+  }
+]
